@@ -113,10 +113,19 @@ python3 /home/ardupilot/ardupilot/Tools/autotest/sim_vehicle.py -v ArduPlane --n
 
 ## 4. Build the ArduPilot SITL Image
 
+Open a command line on your host system, navigate to the folder containing the Dockerfile and wrapper script, and run the commands shown below. Make sure to substitute the correct version of Ubuntu that you're using as the base image in the Dockerfile.
+
+```cmd
+docker pull ubuntu:22.04
+docker build -t ardupilot-sitl:latest .
+```
+
 ---
 
 ## 5. Deploy the ArduPilot SITL Image
 
 ---
 
+## 6. Connecting to ArduPilot SITL from Outside the Docker Container
 
+---
